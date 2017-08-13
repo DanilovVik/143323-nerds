@@ -1,12 +1,216 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <a class="main-header-logo">
+      <img class="main-header-logo-img" src="http://placehold.it/160x65" width="160" height="65" alt="Логотип студии">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation-list">
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">Студия</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">Клиенты</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="catalog.html">Магазин</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-basket">
+      <a class="header-basket-link" href="#">Корзина</a>
+    </div>
+    <section class="header-slider">
+      <input class="slider-input" type="radio" id="btn-1" name="toggle" checked>
+      <input class="slider-input" type="radio" id="btn-2" name="toggle">
+      <input class="slider-input" type="radio" id="btn-3" name="toggle">
+      <div class="slider-inner">
+        <div class="slider-sliders">
+          <div class="slider-one">
+            <p class="slider-title">Долго, дорого, скрупулезно.</p>
+            <p class="slider-text">
+              Математически выверенный дизайн для вашего сайта или мобильного приложения.
+            </p>
+            <a class="btn slider-btn" href="#">Узнать больше</a>
+          </div>
+          <div class="slider-two">
+            <p class="slider-title">Любим математику как никто другой</p>
+            <p class="slider-text">
+              Никакого креатива, только математические формулы для расчета идеальных пропорций.
+            </p>
+            <a class="btn slider-btn" href="#">Узнать больше</a>
+          </div>
+          <div class="slider-three">
+            <p class="slider-title">Только ночь, только хардкор</p>
+            <p class="slider-text">
+              Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+            </p>
+            <a class="btn slider-btn" href="#">Узнать больше</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <label class="slider-controls-label" for="btn-1"></label>
+        <label class="slider-controls-label" for="btn-2"></label>
+        <label class="slider-controls-label" for="btn-3"></label>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section class="features">
+      <h2 class="visually-hidden">Можете заказать</h2>
+      <div class="features-item">
+        <div class="features-photo">
+          <img class="features-photo-img" src="http://placehold.it/300x146" width="300" height="146" alt="Веб-сайты">
+        </div>
+        <h2 class="features-title">Веб-сайты</h2>
+        <p class="features-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <a class="btn features-item-btn features-item-btn__web" href="#">заказать</a>
+      </div>
+      <div class="features-item">
+        <div class="features-photo">
+          <img class="features-photo-img" src="http://placehold.it/300x146" width="300" height="146" alt="Приложения">
+        </div>
+        <h2 class="features-title">Приложения</h2>
+        <p class="features-text">Покорите топ-10 приложений в AppStore и GooglePlay</p>
+        <a class="btn features-item-btn features-item-btn__annexes" href="#">заказать</a>
+      </div>
+      <div class="features-item">
+        <div class="features-photo">
+          <img class="features-photo-img" src="http://placehold.it/300x146" width="300" height="146" alt="Презентации">
+        </div>
+        <h2 class="features-title">Презентаци</h2>
+        <p class="features-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+        <a class="btn features-item-btn features-item-btn__presentation" href="#">заказать</a>
+      </div>
+    </section>
+    <section class="index-content">
+      <h2 class="visually-hidden">Наши Преимущества</h2>
+      <div class="index-content-left">
+        <p class="index-content-title">
+          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        </p>
+        <p class="index-content-text">
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <h3 class="index-content-caption">Выполняем заказы на разработку:</h3>
+        <ul class="index-content-list">
+          <li class="index-content-item">Веб-сайтов любой сложности</li>
+          <li class="index-content-item">Мобильных приложений для iOS и Android</li>
+          <li class="index-content-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="index-content-right">
+        <div class="index-content-logo">
+          <img class="index-content-logo-img" src="http://placehold.it/360x208" width="360" height="208" alt="Логотип студии">
+        </div>
+        <h3 class="index-content-caption">С 2004 года любим точность во всем:</h3>
+        <table class="index-content-table">
+          <tr class="table-row">
+            <td class="table-cell table-cell__bold">
+              146<sup>%</sup>
+            </td>
+            <td class="table-cell table-cell__bold">
+              100<sup>%</sup>
+            </td>
+            <td class="table-cell table-cell__bold">
+              50<sup>%</sup>
+            </td>
+          </tr>
+          <tr class="table-row">
+            <td class="table-cell">
+              Уровень самоотдачи
+            </td>
+            <td class="table-cell">
+              Соблюдение сроков
+            </td>
+            <td class="table-cell">
+              Минимальная предоплата
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="index-content-partners">
+      <h2 class="visually-hidden">Наши партнеры</h2>
+      <ul class="partners-list">
+        <li class="partners-item">
+          <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="partners-link-img" src="http://placehold.it/199x68" width="199" height="68" alt="htmlacademy">
+          </a>
+        </li>
+        <li class="partners-item">
+          <a class="partners-link" href="#">
+            <img class="partners-link-img" src="http://placehold.it/209x87" width="209" height="87" alt="borodinski">
+          </a>
+        </li>
+        <li class="partners-item">
+          <a class="partners-link" href="#">
+            <img class="partners-link-img" src="http://placehold.it/185x52" width="185" height="52" alt="pink">
+          </a>
+        </li>
+        <li class="partners-item">
+          <a class="partners-link" href="#">
+            <img class="partners-link-img" src="http://placehold.it/173x84" width="173" height="84" alt="mishka">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <img class="map-img" src="http://placehold.it/1440x416" width="1440" height="416" alt="Карта">
+      <div class="contact">
+        <h3 class="contact-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="contact-text">
+          191186,Санкт-Петербург, ул.Б. Конюшенная,д. 19/8
+        </p>
+        <p class="contact-text">тел.+7 (812) 275-75-75</p>
+        <a class="btn contact-btn" href="form.html">напишите нам</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <section class="footer-social">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link social-link-vk" href="#">Вконтакте</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link-fb" href="#">Фейсбук</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link-inst" href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <section class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Напишите нам</h2>
+    <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
+      <span class="field"><label class="field-text" for="name">Ваше имя:</label>
+      <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста"></span>
+      <span class="field"><label class="field-text" for="email">Ваш e-mail:</label>
+      <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа"></span>
+      <label class="field-text" for="message">Текст письма:</label>
+      <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      <button class="btn form-btn" type="submit">Отправить</button>
+    </form>
+  </section>
+
+</body>
+
 </html>

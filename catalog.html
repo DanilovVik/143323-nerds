@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <a class="main-header-logo" href="index.html">
+      <img class="main-header-logo-img" src="http://placehold.it/160x65" width="160" height="65" alt="Логотип студии">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation-list">
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">Студия</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">Клиенты</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link main-navigation-link__active">Магазин</a>
+        </li>
+        <li class="main-navigation-item">
+          <a class="main-navigation-link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-basket">
+      <a class="header-basket-link" href="#">Корзина</a>
+    </div>
+    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+  </header>
+
+  <main class="container">
+
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <img class="map-img" src="http://placehold.it/1440x416" width="1440" height="416" alt="Карта">
+      <div class="contact">
+        <h3 class="contact-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="contact-text">
+          191186,Санкт-Петербург, ул.Б. Конюшенная,д. 19/8
+        </p>
+        <p class="contact-text">тел.+7 (812) 275-75-75</p>
+        <a class="btn contact-btn" href="form.html">напишите нам</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <section class="footer-social">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link social-link-vk" href="#">Вконтакте</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link-fb" href="#">Фейсбук</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link social-link-inst" href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <section class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Напишите нам</h2>
+    <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
+      <span class="field"><label class="field-text" for="name">Ваше имя:</label>
+      <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста"></span>
+      <span class="field"><label class="field-text" for="email">Ваш e-mail:</label>
+      <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа"></span>
+      <label class="field-text" for="message">Текст письма:</label>
+      <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      <button class="btn form-btn" type="submit">Отправить</button>
+    </form>
+  </section>
+
+</body>
+
+</html>
