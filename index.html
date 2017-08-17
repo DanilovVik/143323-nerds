@@ -10,7 +10,7 @@
 <body>
   <header class="main-header">
     <a class="main-header-logo">
-    <img class="main-header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии">
+      <img class="main-header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии">
     </a>
     <nav class="main-navigation">
       <ul class="main-navigation-list">
@@ -32,6 +32,7 @@
       <a class="header-basket-link" href="#">Корзина</a>
     </div>
     <section class="header-slider">
+      <h2 class="visually-hidden">Слайдер</h2>
       <input class="slider-input" type="radio" id="btn-1" name="toggle" checked>
       <input class="slider-input" type="radio" id="btn-2" name="toggle">
       <input class="slider-input" type="radio" id="btn-3" name="toggle">
@@ -201,12 +202,18 @@
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-content-title">Напишите нам</h2>
     <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
-      <span class="field"><label class="field-text" for="name">Ваше имя:</label>
-      <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста"></span>
-      <span class="field"><label class="field-text" for="email">Ваш e-mail:</label>
-      <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа"></span>
-      <label class="field-text" for="message">Текст письма:</label>
-      <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      <p class="form-action-field">
+        <label class="field-text" for="name">Ваше имя:</label>
+        <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p class="form-action-field">
+        <label class="field-text" for="email">Ваш e-mail:</label>
+        <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа">
+      </p>
+      <p class="form-action-field">
+        <label class="field-text" for="message">Текст письма:</label>
+        <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      </p>
       <button class="btn form-btn" type="submit">Отправить</button>
     </form>
   </section>

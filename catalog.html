@@ -58,38 +58,38 @@
           <label class="field-radio">
             <input class="field-radio-input" type="radio" name="grid" value="adaptive" checked>
               <span class="field-radio-name">Адаптивная</span>
-            </label>
+          </label>
           <label class="field-radio">
             <input class="field-radio-input" type="radio" name="grid" value="fixed">
               <span class="field-radio-name">Фиксированная</span>
-            </label>
+          </label>
           <label class="field-radio">
             <input class="field-radio-input" type="radio" name="grid" value="rubber">
               <span class="field-radio-name">Резиновая</span>
-            </label>
+          </label>
         </fieldset>
         <fieldset class="catalog-form-fieldset">
           <legend class="catalog-form-inscription">Особенности:</legend>
           <label class="field-checkbox">
             <input class="field-checkbox-input" type="checkbox" name="slider" checked>
               <span class="field-checkbox-name">Слайдер</span>
-            </label>
+          </label>
           <label class="field-checkbox">
             <input class="field-checkbox-input" type="checkbox" name="advantage block">
               <span class="field-checkbox-name">Блок преимуществ</span>
-            </label>
+          </label>
           <label class="field-checkbox">
             <input class="field-checkbox-input" type="checkbox" name="news" checked>
               <span class="field-checkbox-name">Новости</span>
-            </label>
+          </label>
           <label class="field-checkbox">
             <input class="field-checkbox-input" type="checkbox" name="gallery">
               <span class="field-checkbox-name">Галерея</span>
-            </label>
+          </label>
           <label class="field-checkbox">
             <input class="field-checkbox-input" type="checkbox" name="basket">
               <span class="field-checkbox-name">Корзина</span>
-            </label>
+          </label>
         </fieldset>
         <button class="btn field-form-btn" type="submit">Показать</button>
       </form>
@@ -238,12 +238,18 @@
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-content-title">Напишите нам</h2>
     <form class="form-action" action="https://echo.htmlacademy.ru" method="post">
-      <span class="field"><label class="field-text" for="name">Ваше имя:</label>
-      <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста"></span>
-      <span class="field"><label class="field-text" for="email">Ваш e-mail:</label>
-      <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа"></span>
-      <label class="field-text" for="message">Текст письма:</label>
-      <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      <p class="form-action-field">
+        <label class="field-text" for="name">Ваше имя:</label>
+        <input class="field-text-input" id="name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+      </p>
+      <p class="form-action-field">
+        <label class="field-text" for="email">Ваш e-mail:</label>
+        <input class="field-text-input" id="email" type="email" name="email" placeholder="Для отправки ответа">
+      </p>
+      <p class="form-action-field">
+        <label class="field-text" for="message">Текст письма:</label>
+        <textarea class="field-text-textarea" id="message" name="message" placeholder="В свободной форме"></textarea>
+      </p>
       <button class="btn form-btn" type="submit">Отправить</button>
     </form>
   </section>
