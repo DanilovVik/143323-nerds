@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-html,
+  <<<<<<< HEAD html,
 body {
   margin: 0;
   padding: 0;
@@ -22,7 +21,14 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .btn {
@@ -247,15 +253,14 @@ body {
 #btn-3:checked~.slider-inner .slider-sliders {
   -webkit-transform: translate(-2320px);
   transform: translate(-2320px);
-=======
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
->>>>>>> 50763963109be25b65fabb7df3104c361329a378
-}
+  =======.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    >>>>>>>50763963109be25b65fabb7df3104c361329a378
+  }
