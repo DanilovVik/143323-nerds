@@ -1,4 +1,4 @@
-  <<<<<<< HEAD html,
+html,
 body {
   margin: 0;
   padding: 0;
@@ -53,46 +53,40 @@ body {
   margin: 0;
   padding: 0;
   background-color: #eee;
-}
-
-.main-header-top {
-  display: flex;
-  justify-content: space-between;
-  color: #000;
+  margin-bottom: 80px;
 }
 
 .main-navigation {
-  width: 640px;
-  margin-top: 75px;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-navigation-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 640px;
   margin: 0;
   padding: 0;
+  margin-top: 75px;
   list-style: none;
   font-size: 0;
 }
 
 .main-navigation-item {
-  display: inline-block;
+  margin-right: 40px;
+  padding-bottom: 15px;
+}
+
+.main-navigation-link {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-  vertical-align: top;
-}
-
-.main-navigation-link {
-  display: block;
-  margin-right: 40px;
-  padding-bottom: 15px;
   text-decoration: none;
   color: #000;
 }
 
 .main-header-logo {
-  display: block;
   width: 160px;
   margin-left: auto;
   margin-right: 200px;
@@ -108,18 +102,15 @@ body {
   width: 130px;
   margin-top: 75px;
   margin-left: 30px;
-  margin-right: auto;
+  padding-bottom: 15px;
 }
 
 .header-basket-link {
   position: relative;
-  display: inline-block;
-  padding-bottom: 15px;
   padding-left: 55px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  vertical-align: top;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
@@ -129,7 +120,6 @@ body {
   position: relative;
   width: 1160px;
   height: 430px;
-  margin: 0 auto;
   background-color: #eee;
 }
 
@@ -253,14 +243,59 @@ body {
 #btn-3:checked~.slider-inner .slider-sliders {
   -webkit-transform: translate(-2320px);
   transform: translate(-2320px);
-  =======.visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    >>>>>>>50763963109be25b65fabb7df3104c361329a378
-  }
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 78px;
+  border-bottom: 2px solid #eee;
+}
+
+.features-item {
+  width: 300px;
+}
+
+.index-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #eee;
+}
+
+.index-content-left {
+  width: 700px;
+  padding-top: 80px;
+}
+
+.index-content-right {
+  width: 400px;
+}
+
+.index-content-partners {
+  margin-bottom: 80px;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  border-bottom: 2px solid #eee;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.contact {
+  display: none;
+}
+
+.main-footer {
+  padding-bottom: 67px;
+  padding-top: 67px;
+}
+
+.
+
+.modal-content {
+  display: none;
+}
