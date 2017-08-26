@@ -144,6 +144,7 @@ body {
   width: 130px;
   margin-top: 75px;
   margin-left: 30px;
+  margin-left: auto;
   padding-bottom: 10px;
 }
 
@@ -237,10 +238,6 @@ body {
   color: #5d6367;
 }
 
-.slider-btn {
-  width: 140px;
-}
-
 .slider-btn:hover {
   background-color: #e74246;
 }
@@ -248,6 +245,7 @@ body {
 .slider-btn:active {
   background-color: #d7373b;
   color: rgba(227, 115, 118, 0.3);
+  box-shadow: inset 0 3px #c13135;
 }
 
 .slider-one {
@@ -323,13 +321,82 @@ body {
 
 .features {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-bottom: 78px;
   border-bottom: 2px solid #eee;
 }
 
 .features-item {
   width: 300px;
+  margin-right: 100px;
+}
+
+.features-item:last-child {
+  margin-right: 60px;
+}
+
+.features-photo {
+  margin-bottom: 30px;
+}
+
+.features-photo-img {
+  width: 300px;
+  height: 146px;
+}
+
+.features-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.features-text {
+  width: 260px;
+  margin-bottom: 35px;
+}
+
+.features-item-btn {
+  padding: 18px 35px;
+}
+
+.features-item-btn:hover.features-item-btn__web {
+  background-color: #e74246;
+}
+
+.features-item-btn:active.features-item-btn__web {
+  background-color: #d7373b;
+  color: rgba(228, 135, 137, 0.3);
+   box-shadow: inset 0 3px #c13135;
+}
+
+.features-item-btn.features-item-btn__annexes {
+  background-color: #00ca74;
+}
+
+.features-item-btn:hover.features-item-btn__annexes {
+  background-color: #00bc6c;
+}
+
+.features-item-btn:active.features-item-btn__annexes {
+  background-color: #00aa62;
+  color: rgba(116, 198, 156, 0.3);
+  box-shadow: inset 0 3px #009958;
+}
+
+.features-item-btn.features-item-btn__presentation {
+  background-color: #efc84a;
+}
+
+.features-item-btn:hover.features-item-btn__presentation {
+  background-color: #eab534;
+}
+
+.features-item-btn:active.features-item-btn__presentation {
+  background-color: #e5a722;
+  color: rgba(237, 196, 127, 0.3);
+  box-shadow: inset 0 3px #ce961f;
 }
 
 .index-content {
@@ -341,11 +408,83 @@ body {
 
 .index-content-left {
   width: 700px;
-  padding-top: 80px;
+  margin-right: auto;
+}
+
+.index-content-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  padding-top: 40px;
+}
+
+.index-content-text {
+  width: 620px;
+  margin-bottom: 40px;
+}
+
+.index-content-caption {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.index-content-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-content-item {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.index-content-item::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .index-content-right {
-  width: 400px;
+  width: 360px;
+  margin-left: auto;
+}
+
+.index-content-logo {
+  margin-top: 40px;
+  margin-bottom: 37px;
+}
+
+.index-content-logo-img {
+  width: 360px;
+  height: 208px;
+}
+
+.index-content-table {
+  width: 360px;
+  height: 95px;
+}
+
+.table-cell {
+  width: 120px;
+  height: 30px;
+  padding-top: 28px;
+  padding-right: 10px;
+}
+
+.table-cell.table-cell__bold {
+  padding-top: 10px;
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
 }
 
 .index-content-partners {
@@ -359,6 +498,18 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+
+.partners-link {
+  opacity: 0.2;
+}
+
+.partners-link:hover {
+  opacity: 1;
+}
+
+.partners-link:active {
+  opacity: 0.1;
 }
 
 .map {
@@ -387,19 +538,17 @@ body {
 
 .contact {
   max-width: 220px;
-  height: 240px;
   position: absolute;
   top: 50px;
   left: 20px;
   text-align: left;
-  padding: 50px;
+  padding: 48px;
   background: #fff;
   overflow: hidden;
 }
 
 .contact-title {
   margin: 0;
-  margin-top: 16px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -409,16 +558,20 @@ body {
 
 .contact-text {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 27px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
 
+.contact-text.contact-text__tel {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .contact-btn {
-  display: inline-block;
-  width: 130px;
-  margin-top: 35px;
+  margin: 0;
+  padding: 0;
   padding: 16px 45px;
   white-space: nowrap;
 }
