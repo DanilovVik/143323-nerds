@@ -12,10 +12,10 @@
 <body>
 
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img class="main-header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии">
-    </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
+      <a class="main-header-logo" href="index.html">
+        <img class="main-header-logo-img" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии">
+      </a>
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
           <a class="main-navigation-link" href="#">Студия</a>
@@ -23,17 +23,17 @@
         <li class="main-navigation-item">
           <a class="main-navigation-link" href="#">Клиенты</a>
         </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link main-navigation-link__active">Магазин</a>
+        <li class="main-navigation-item main-navigation-item__active">
+          <a class="main-navigation-link">Магазин</a>
         </li>
         <li class="main-navigation-item">
           <a class="main-navigation-link" href="#">Контакты</a>
         </li>
       </ul>
+      <div class="header-basket">
+        <a class="header-basket-link" href="#">Корзина</a>
+      </div>
     </nav>
-    <div class="header-basket">
-      <a class="header-basket-link" href="#">Корзина</a>
-    </div>
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
   </header>
 
@@ -58,38 +58,38 @@
         <fieldset class="catalog-form-fieldset">
           <legend class="catalog-form-inscription">Сетка:</legend>
           <label class="field-radio">
-            <input class="field-radio-input" type="radio" name="grid" value="adaptive" checked>
+            <input class="visually-hidden field-radio-input" type="radio" name="grid" value="adaptive" checked>
               <span class="field-radio-name">Адаптивная</span>
           </label>
           <label class="field-radio">
-            <input class="field-radio-input" type="radio" name="grid" value="fixed">
+            <input class="visually-hidden field-radio-input" type="radio" name="grid" value="fixed">
               <span class="field-radio-name">Фиксированная</span>
           </label>
           <label class="field-radio">
-            <input class="field-radio-input" type="radio" name="grid" value="rubber">
+            <input class="visually-hidden field-radio-input" type="radio" name="grid" value="rubber">
               <span class="field-radio-name">Резиновая</span>
           </label>
         </fieldset>
         <fieldset class="catalog-form-fieldset">
           <legend class="catalog-form-inscription">Особенности:</legend>
           <label class="field-checkbox">
-            <input class="field-checkbox-input" type="checkbox" name="slider" checked>
+            <input class="visually-hidden field-checkbox-input" type="checkbox" name="slider" checked>
               <span class="field-checkbox-name">Слайдер</span>
           </label>
           <label class="field-checkbox">
-            <input class="field-checkbox-input" type="checkbox" name="advantage block">
+            <input class="visually-hidden field-checkbox-input" type="checkbox" name="advantage block">
               <span class="field-checkbox-name">Блок преимуществ</span>
           </label>
           <label class="field-checkbox">
-            <input class="field-checkbox-input" type="checkbox" name="news" checked>
+            <input class="visually-hidden field-checkbox-input" type="checkbox" name="news" checked>
               <span class="field-checkbox-name">Новости</span>
           </label>
           <label class="field-checkbox">
-            <input class="field-checkbox-input" type="checkbox" name="gallery">
+            <input class="visually-hidden field-checkbox-input" type="checkbox" name="gallery">
               <span class="field-checkbox-name">Галерея</span>
           </label>
           <label class="field-checkbox">
-            <input class="field-checkbox-input" type="checkbox" name="basket">
+            <input class="visually-hidden field-checkbox-input" type="checkbox" name="basket">
               <span class="field-checkbox-name">Корзина</span>
           </label>
         </fieldset>

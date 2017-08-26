@@ -73,11 +73,26 @@ body {
 }
 
 .main-navigation-item {
+  margin: 0;
+  padding: 0;
   margin-right: 40px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.main-navigation .main-navigation-item__active {
+  position: relative;
+}
+
+.main-navigation .main-navigation-item__active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .main-navigation-link {
+  display: block;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -86,11 +101,38 @@ body {
   color: #000;
 }
 
+.main-navigation-link:hover {
+  color: #fb565a;
+}
+
+.main-navigation-item__active:hover .main-navigation-link,
+.main-navigation-item__active:active .main-navigation-link {
+  opacity: 1;
+  color: #000;
+}
+
+.main-navigation-link:active {
+  color: #000;
+  opacity: 0.3;
+}
+
 .main-header-logo {
   width: 160px;
-  margin-left: auto;
   margin-right: 200px;
   margin-top: 50px;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-header-logo:hover.main-header-logo__active,
+.main-header-logo:active.main-header-logo__active {
+  opacity: 1;
 }
 
 .main-header-logo-img {
@@ -102,18 +144,52 @@ body {
   width: 130px;
   margin-top: 75px;
   margin-left: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.header-basket .header-basket-link__active {
+  position: relative;
+}
+
+.header-basket .header-basket-link__active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .header-basket-link {
   position: relative;
-  padding-left: 55px;
+  display: inline-block;
+  padding-left: 40px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+}
+
+.header-basket-link::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: url("../img/cart-icon.svg") no-repeat;
+}
+
+.header-basket-link:hover {
+  color: #fb565a;
+}
+
+.header-basket-link:active {
+  color: #000;
+  opacity: 0.3;
 }
 
 .slider {
@@ -356,7 +432,6 @@ body {
   color: rgba(227, 115, 118, 0.3);
 }
 
-
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -408,7 +483,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 
 .social-btn:hover {
   background: #e74246;
