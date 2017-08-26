@@ -386,18 +386,27 @@ body {
   position: absolute;
   top: 33px;
   left: 27px;
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .social-btn-fb {
   position: absolute;
   top: 29px;
   left: 34px;
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .social-btn-insta {
   position: absolute;
   top: 29px;
   left: 29px;
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 
