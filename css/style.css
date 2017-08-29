@@ -915,8 +915,8 @@ body {
 }
 
 .catalog-item-photo-img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 576px;
 }
 
 .catalog-item-photo::after {
