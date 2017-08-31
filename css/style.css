@@ -68,7 +68,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #eee;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .inner .main-header {
@@ -136,6 +136,8 @@ body {
 }
 
 .main-header-logo {
+  margin: 0;
+  padding: 0;
   width: 160px;
   margin-right: 200px;
   margin-top: 50px;
@@ -218,7 +220,7 @@ body {
 .slider {
   position: relative;
   width: 1160px;
-  height: 430px;
+  height: 433px;
   background-color: #eee;
 }
 
@@ -246,7 +248,7 @@ body {
 .slider-title {
   margin: 0;
   width: 520px;
-  margin-top: 80px;
+  margin-top: 70px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -256,7 +258,7 @@ body {
   margin: 0;
   width: 410px;
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   color: #5d6367;
 }
 
@@ -295,7 +297,7 @@ body {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  bottom: 105px;
   width: 140px;
   height: 20px;
   margin-left: -65px;
@@ -311,7 +313,7 @@ body {
   margin-right: 15px;
   background-color: #fff;
   border-radius: 50%;
-  vertical-align: middle;
+  vertical-align: top;
   cursor: pointer;
 }
 
@@ -364,10 +366,6 @@ body {
   margin-right: 60px;
 }
 
-.features-photo {
-  margin-bottom: 30px;
-}
-
 .features-photo-img {
   width: 300px;
   height: 146px;
@@ -378,7 +376,7 @@ body {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .features-text {
@@ -387,7 +385,7 @@ body {
 }
 
 .features-item-btn {
-  padding: 18px 35px;
+  padding: 12px 37px;
 }
 
 .features-item-btn:hover.features-item-btn__web {
@@ -431,7 +429,7 @@ body {
 .index-content {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   border-bottom: 2px solid #eee;
 }
 
@@ -444,8 +442,8 @@ body {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 35px;
+  margin-top: 35px;
+  margin-bottom: 30px;
   padding-top: 40px;
 }
 
@@ -455,9 +453,12 @@ body {
 }
 
 .index-content-caption {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .index-content-list {
@@ -469,7 +470,7 @@ body {
 .index-content-item {
   position: relative;
   padding-left: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .index-content-item::after {
@@ -489,7 +490,7 @@ body {
 
 .index-content-logo {
   margin-top: 40px;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 }
 
 .index-content-logo-img {
@@ -505,25 +506,27 @@ body {
 .table-cell {
   width: 120px;
   height: 30px;
-  padding-top: 28px;
+  padding-top: 20px;
   padding-right: 10px;
 }
 
 .table-cell.table-cell__bold {
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 45px;
   line-height: 10px;
   font-weight: 700;
 }
 
 .index-content-partners {
-  margin-bottom: 80px;
-  padding-top: 46px;
-  padding-bottom: 44px;
+  margin-bottom: 85px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-bottom: 2px solid #eee;
 }
 
 .partners-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -1156,6 +1159,7 @@ body {
   font-weight: 400;
   margin-top: 10px;
 }
+
 
 /*модальное окно*/
 
