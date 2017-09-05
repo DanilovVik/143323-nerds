@@ -7,6 +7,5 @@
 *.sublime*
 node_modules/
 Thumbs.db
-*.css
 css/normalize.css
-/css/style-min.css
+
