@@ -21,8 +21,8 @@ body {
 }
 
 .visually-hidden:not(:focus):not(:active),
-.field-checkbox-input.visually-hidden,
-.field-radio-input.visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -689,107 +689,113 @@ body {
 	background: #f1f1f1;
 }
 
-.field-radio,
-.field-checkbox {
+.catalog-form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-form-item {
+  margin-bottom: 20px;
+}
+
+.field-radio-label,
+.field-checkbox-label {
 	position: relative;
 	display: block;
 	padding-left: 35px;
+  line-height: 20px;
 	cursor: pointer;
 }
 
-.field-radio-name,
-.field-checkbox-name {
-	display: block;
-	line-height: 20px;
-	margin-bottom: 20px;
+.field-radio-label:hover,
+.field-checkbox-label:hover {
+  color: #000;
 }
 
-.field-radio-name:hover,
-.field-checkbox-name:hover {
-	color: #000;
+.field-radio-input + .field-radio-label::after {
+  position: absolute;
+  content: "";
+  top: -2px;;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
 }
 
-.field-radio-name::after {
-	content: "";
-	position: absolute;
-	top: -2px;
-	left: 0;
-	width: 25px;
-	height: 25px;
-	background-image: url("../img/radio-off.svg");
-	background-repeat: no-repeat;
-	opacity: 0.4;
+.field-radio-input:checked + .field-radio-label::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
 }
 
-.field-radio-name:hover::after {
+.field-radio-input:checked+.field-radio-label:hover::before {
 	opacity: 1;
 }
 
-.field-checkbox-name::after {
-	content: "";
-	position: absolute;
-	top: -2px;
-	left: 0;
-	width: 27px;
-	height: 23px;
-	background-image: url("../img/checkbox-off.svg");
-	background-repeat: no-repeat;
-	opacity: 0.4;
-}
-
-.field-radio-input:checked+.field-radio-name::after {
-	content: "";
-	position: absolute;
-	top: -2px;
-	left: 0;
-	width: 25px;
-	height: 25px;
-	background-image: url("../img/radio-on.svg");
-	background-repeat: no-repeat;
-	opacity: 0.4;
-}
-
-.field-radio-input:checked+.field-radio-name:hover::after {
+.field-radio-input +.field-radio-label:hover::after {
 	opacity: 1;
 }
 
-.field-checkbox-input:checked+.field-checkbox-name::after {
-	content: "";
-	position: absolute;
-	width: 27px;
-	height: 23px;
-	left: 0;
-	top: -2px;
-	background-image: url("../img/checkbox-on.svg");
-	background-repeat: no-repeat;
-	opacity: 0.4;
+.field-checkbox-input + .field-checkbox-label::after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
 }
 
-.field-checkbox-input:checked+.field-checkbox-name:hover::after {
-	opacity: 1;
+.field-checkbox-input:checked + .field-checkbox-label::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
 }
 
-.field-checkbox-name:hover::after {
-	opacity: 1;
+.field-checkbox-input + .field-checkbox-label:hover::after {
+  opacity: 1;
 }
 
-.field-radio.disabled,
-.field-checkbox.disabled {
-	opacity: 0.3;
+.field-checkbox-input:checked + .field-checkbox-label:hover::before {
+  opacity: 1;
+}
+
+.field-radio-input:disabled + .field-radio-label::after,
+.field-radio-input:checked:disabled + .field-radio-label::before {
+  opacity: 0.1;
 	cursor: default;
 }
 
-.field-radio.disabled .field-checkbox-name::after,
-.field-checkbox.disabled .field-radio-name::after,
-.field-checkbox-input:disabled+.field-checkbox-name::after,
-.field-radio-input:disabled+.field-radio-name::after {
-	opacity: 0.1;
+.field-radio-label.disabled,
+.field-checkbox-label.disabled {
+  opacity: 0.3;
 	cursor: default;
 }
 
-.field-checkbox-input:checked:disabled+.field-checkbox-name::after,
-.field-radio-input:checked:disabled+.field-radio-name::after {
-	opacity: 0.1;
+.field-checkbox-input:disabled + .field-checkbox-label::after,
+.field-checkbox-input:checked:disabled + .field-checkbox-label::before {
+  opacity: 0.1;
 	cursor: default;
 }
 
