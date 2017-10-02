@@ -340,19 +340,16 @@ input[type="radio"].visually-hidden {
 
 #btn-1:checked~.slider-inner .slider-sliders {
 	-webkit-transform: translate(0);
-	-ms-transform: translate(0);
 	transform: translate(0);
 }
 
 #btn-2:checked~.slider-inner .slider-sliders {
 	-webkit-transform: translate(-1160px);
-	-ms-transform: translate(-1160px);
 	transform: translate(-1160px);
 }
 
 #btn-3:checked~.slider-inner .slider-sliders {
 	-webkit-transform: translate(-2320px);
-	-ms-transform: translate(-2320px);
 	transform: translate(-2320px);
 }
 
@@ -1473,5 +1470,3 @@ input[type="radio"].visually-hidden {
 	color: #000;
 }
 
-© 2017 GitHub,
-Inc. Terms Privacy Security Status Help Contact GitHub API Training Shop Blog
