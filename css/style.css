@@ -925,6 +925,19 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
+/*.catalog-item::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 14px;
+  top: -26px;
+  -webkit-box-shadow: 23px 0 0 #fff, 46px 0 0 #fff;
+  box-shadow: 23px 0 0 #fff, 46px 0 0 #fff;
+}*/
+
 .catalog-item:hover.catalog-item::after {
 	opacity: 1;
 }
