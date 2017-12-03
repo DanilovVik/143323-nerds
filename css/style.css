@@ -33,7 +33,7 @@ input[type="radio"].visually-hidden {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: ;
+  overflow: hidden;
 }
 
 .btn {
@@ -45,9 +45,9 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: black;
+  background-color: #fb565a;
   border: none;
-  border-radius: 115px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
